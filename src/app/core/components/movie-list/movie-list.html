@@ -1,0 +1,9 @@
+<div class="flex justify-between items-center px-4 pb-4 pt-8">
+  <h3 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">IMDb Top 250</h3>
+</div>
+
+<div class="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-6 p-4">
+  @for (movie of movies(); track $index) {
+    <app-movie-card [movie]="movie"></app-movie-card>
+  }
+</div>

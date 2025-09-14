@@ -1,0 +1,33 @@
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 mx-auto">
+  <div class="@container">
+    <div
+      class="relative flex min-h-[480px] flex-col gap-6 overflow-hidden bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-lg items-center justify-center p-8 text-center"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%),
+          url('https://lh3.googleusercontent.com/aida-public/AB6AXuCErd2MXREgZT_PRtL_tWuUXnuvlRVZADe0FJrONQ-ll8mAWLcymp9Ca6BAbF8AJlew2Mm4maDOON3Z5nEVmVFoRUD95lZAt-niuB1SXgeI6fJcU_lMCX0vYt6VImC1coMvr7SofkZsIg88o1JNO_mN8zZ6MJaqwtNzdw4-E_uOoZc7GM1IFmXZVoJ_jHW2qlVWTm9NgJlEKbRzijuhfbKfvlxLbZJJ3SxPj3oMSVEq-X50b9mWvEtw8Qeea89aC_TKYlRpTKe756ua');
+      "
+    >
+      <div class="flex flex-col gap-4">
+        <h2
+          class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+        >
+          Welcome to Filmklub
+        </h2>
+        <p
+          class="text-white/80 text-base font-normal leading-normal max-w-2xl @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal"
+        >
+          Fedezd fel az IMDb Top 250 listáját, böngéssz képekkel, címekkel és értékelésekkel.
+        </p>
+      </div>
+      <button
+        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-[0.015em] transition-transform hover:scale-105"
+      >
+        <span class="truncate">Top 250 film megtekintése</span>
+      </button>
+    </div>
+  </div>
+  <div class="@container mt-4">
+    <app-movie-list [limit]="8" />
+  </div>
+</div>
