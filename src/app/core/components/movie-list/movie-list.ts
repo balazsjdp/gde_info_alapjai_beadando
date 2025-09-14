@@ -1,7 +1,7 @@
 import { Component, inject, Input, OnInit, signal, WritableSignal } from '@angular/core';
 import { ImdbService } from '../../../services/imdb.service';
 import { Movie } from '../../../models/movie.interface';
-import { MovieCard } from "../movie-card/movie-card";
+import { MovieCard } from '../movie-card/movie-card';
 
 @Component({
   selector: 'app-movie-list',

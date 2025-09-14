@@ -1,18 +1,18 @@
- <div class="group flex flex-col gap-3">
-      <div class="w-full bg-center bg-no-repeat aspect-[2/3] bg-cover rounded-lg overflow-hidden">
-        <img
-          alt="{{ movie?.title }} Poster"
-          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          src="{{ movie?.image }}"
-          onerror="this.src='https://placehold.co/242x346/8013ec/141118?text=No+Image'"
-          loading="lazy"
-        />
-      </div>
-      <div>
-        <p class="text-white text-base font-bold leading-normal">{{ movie?.title }}</p>
-        <div class="flex items-center gap-1">
-          <span class="material-symbols-outlined text-yellow-400 text-base">{{ratingStars}}</span>
-          <p class="text-[#ab9db9] text-sm font-normal leading-normal">{{movie?.rating}}</p>
-        </div>
-      </div>
+<div class="group flex flex-col gap-3">
+  <div class="w-full bg-center bg-no-repeat aspect-[2/3] bg-cover rounded-lg overflow-hidden">
+    <img
+      alt="{{ movie?.title }} Poster"
+      class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+      src="{{ movie?.image }}"
+      onerror="this.src='https://placehold.co/242x346/8013ec/141118?text=No+Image'"
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <p class="text-white text-base font-bold leading-normal">{{ movie?.title }}</p>
+    <div class="flex items-center gap-1">
+      <span class="material-symbols-outlined text-yellow-400 text-base">{{ ratingStars }}</span>
+      <p class="text-[#ab9db9] text-sm font-normal leading-normal">{{ movie?.rating }}</p>
     </div>
+  </div>
+</div>

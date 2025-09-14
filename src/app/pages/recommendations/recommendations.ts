@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { MovieList } from "../../core/components/movie-list/movie-list";
+import { MovieList } from '../../core/components/movie-list/movie-list';
 
 @Component({
   selector: 'app-recommendations',
   imports: [MovieList],
   templateUrl: './recommendations.html',
-  styleUrl: './recommendations.css'
+  styleUrl: './recommendations.css',
 })
-export class Recommendations {
-
-}
+export class Recommendations {}
