@@ -1,9 +1,9 @@
-import { Component, computed, OnInit, signal, WritableSignal } from '@angular/core';
+import { Component, computed, OnInit, signal } from '@angular/core';
 import { MovieBase } from '../../core/components/_movie-base/movie-base';
 import { Movie } from '../../models/movie.interface';
 import { MovieCard } from '../../core/components/movie-card/movie-card';
 
-const FAVORITE_MOVIES = ["Inception", "Interstellar", "Fight Club", "The Matrix", "Inglourious Basterds", "The Green Mile", "Star Wars", "Life of Brian","Whiplash"]
+const FAVORITE_MOVIES = ["Inception", "Interstellar", "Fight Club", "The Matrix", "Inglourious Basterds", "The Green Mile", "Star Wars", "Life of Brian","Whiplash","The Godfather", ]
 
 @Component({
   selector: 'app-our-favorites',
